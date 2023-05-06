@@ -7,12 +7,24 @@ import { useNavigate } from 'react-router-dom';
 import Alert from 'react-bootstrap/Alert';
 import { showToast } from './utils/showToast';
 
+//* Backend server setup start
+// For development
+// const baseURL = 'http://localhost:3001'; // Change this to your Node.js server URL in development mode
+
+// For production
+const baseURL = 'https://newswire-server-9nfd.onrender.com'; // Change this to your Node.js server URL in production mode
+
+const api = axios.create({
+    baseURL: baseURL
+});
+//! End
+
 const NewNews = () => {
 	const navigate = useNavigate();
 
 	const addNewsToDB = async (values) => {
 		try {
-			const response = await axios.post('/api/news', {
+			const response = await api.post('/api/news', {
 				title: values.title,
 				body: values.body,
 				author: values.author

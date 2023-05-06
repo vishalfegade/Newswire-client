@@ -25,7 +25,7 @@ const getNewsItemsHelper = async () => {
 
 const getNewsItemByIdHelper = async (id) => {
 	try {
-		const response = await axios.get(`/api/news/${id}`);
+		const response = await api.get(`/api/news/${id}`);
 		return {
 			newsItem: response.data
 		};

@@ -9,6 +9,18 @@ import { getNewsItemById } from '../store/actions/index';
 import Alert from 'react-bootstrap/Alert';
 import { showToast } from './utils/showToast';
 
+//* Backend server setup start
+// For development
+// const baseURL = 'http://localhost:3001'; // Change this to your Node.js server URL in development mode
+
+// For production
+const baseURL = 'https://newswire-server-9nfd.onrender.com'; // Change this to your Node.js server URL in production mode
+
+const api = axios.create({
+    baseURL: baseURL
+});
+//! End
+
 const EditNews = () => {
 	const { id } = useParams();
 	const dispatch = useDispatch();
@@ -34,7 +46,7 @@ const EditNews = () => {
 
 	const editNews = async (values) => {
 		try {
-			const response = await axios.patch(`/api/news/${id}`, {
+			const response = await api.patch(`/api/news/${id}`, {
 				title: values.title,
 				body: values.body,
 				author: values.author
