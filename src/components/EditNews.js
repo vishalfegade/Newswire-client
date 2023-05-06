@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
-import axios from 'axios';
 import { useParams, useNavigate } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 
@@ -9,17 +8,9 @@ import { getNewsItemById } from '../store/actions/index';
 import Alert from 'react-bootstrap/Alert';
 import { showToast } from './utils/showToast';
 
-//* Backend server setup start
-// For development
-// const baseURL = 'http://localhost:3001'; // Change this to your Node.js server URL in development mode
+//import axios from 'axios';
+import api from './utils/serverSetup';
 
-// For production
-const baseURL = 'https://newswire-server-9nfd.onrender.com'; // Change this to your Node.js server URL in production mode
-
-const api = axios.create({
-    baseURL: baseURL
-});
-//! End
 
 const EditNews = () => {
 	const { id } = useParams();

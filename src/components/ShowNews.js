@@ -5,23 +5,14 @@ import { useParams } from 'react-router-dom';
 
 import { useNavigate } from 'react-router-dom';
 import Moment from 'react-moment';
-import axios from 'axios';
+
 
 import { getNewsItemById } from '../store/actions/index';
 import { LinkContainer } from 'react-router-bootstrap';
 import { showToast } from './utils/showToast';
 
-//* Backend server setup start
-// For development
-// const baseURL = 'http://localhost:3001'; // Change this to your Node.js server URL in development mode
-
-// For production
-const baseURL = 'https://newswire-server-9nfd.onrender.com'; // Change this to your Node.js server URL in production mode
-
-const api = axios.create({
-    baseURL: baseURL
-});
-//! End
+//import axios from 'axios';
+import api from './utils/serverSetup';
 
 const ShowNews = () => {
 	const newsStore = useSelector((state) => state.news);

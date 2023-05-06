@@ -1,23 +1,17 @@
 import React from 'react';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
-import axios from 'axios';
+
 import { useNavigate } from 'react-router-dom';
 
 import Alert from 'react-bootstrap/Alert';
 import { showToast } from './utils/showToast';
 
-//* Backend server setup start
-// For development
-// const baseURL = 'http://localhost:3001'; // Change this to your Node.js server URL in development mode
 
-// For production
-const baseURL = 'https://newswire-server-9nfd.onrender.com'; // Change this to your Node.js server URL in production mode
 
-const api = axios.create({
-    baseURL: baseURL
-});
-//! End
+//import axios from 'axios';
+import api from './utils/serverSetup';
+
 
 const NewNews = () => {
 	const navigate = useNavigate();
