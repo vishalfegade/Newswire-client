@@ -1,70 +1,69 @@
-# Getting Started with Create React App
+## NewsWire-Client
+NewsWire is a web application that allows users to create, read, update, and delete news articles. The application is built using the Model-View-Controller (MVC) architecture, and uses React for the frontend and Node.js for the backend.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Features
 
-## Available Scripts
+NewsWire provides the following features:
+-Create news articles: Users can create new news articles by filling out a form that includes fields for the article's title, content, author, and category.
+-Read news articles: Users can view a list of all the news articles that have been created, as well as view the details of individual articles.
+-Update news articles: Users can edit the title, content, author, and category of existing news articles.
+-Delete news articles: Users can delete news articles they no longer want to keep in the system.
 
-In the project directory, you can run:
 
-### `npm start`
+## Authors
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- [@vishalfegade](https://github.com/vishalfegade)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+## Contributing
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Contributions to this project are welcome! If you notice any issues or would like to add a new feature, feel free to open an issue or submit a pull request.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Demo
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Client : https://newswire-client-9dvp.onrender.com
+Server : https://newswire-server-9nfd.onrender.com
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## Feedback
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+If you have any feedback, please reach out to us at vsfegade2000@gmail.com
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 🔗 Links
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+[<img src="https://www.seekpng.com/png/detail/111-1112824_picture-my-portfolio-logo-png.png" width="150">](https://codewithpankaj.vercel.app)
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<a href="https://www.linkedin.com/in/vishal-f-10286924a/" target="blank"><img align="center" src="https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white" alt="Linkedin" height="40"/></a><br><br>
+<a href="https://leetcode.com/vsfegade/" target="blank"><img align="center" src="https://img.shields.io/badge/LeetCode-000000?style=for-the-badge&logo=LeetCode&logoColor=#d16c06" alt="LeetCode" height="40"/></a>
+<a href="https://auth.geeksforgeeks.org/user/vsfegade/practice" target="blank"><img align="center" src="https://img.shields.io/badge/GeeksforGeeks-gray?style=for-the-badge&logo=geeksforgeeks&logoColor=35914c" alt="geeksforgeeks" height="40"/></a><br><br>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Lessons Learned
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+-MVC architecture can help to organize the codebase: By separating the application logic into models, views, and controllers, it becomes easier to maintain and extend the codebase. It also promotes the separation of concerns and makes the code easier to test.
 
-### Analyzing the Bundle Size
+-React can be a powerful tool for building user interfaces: React's component-based approach allows for reusable and modular code, which can save time and effort in the long run. React's virtual DOM also helps to optimize the rendering performance of the application.
+## Run Locally
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Clone the project
 
-### Making a Progressive Web App
+```bash
+  git clonehttps://github.com/vishalfegade/Newswire-client.git
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Go to the project directory
 
-### Advanced Configuration
+```bash
+  cd Newswire-client
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Start code editor
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```bash
+  code .
+  npm install
+  npm start
+```
